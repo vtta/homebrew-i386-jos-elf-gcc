@@ -3,6 +3,11 @@ class I386JosElfGcc < Formula
   url "http://ftpmirror.gnu.org/gcc/gcc-4.6.1/gcc-core-4.6.1.tar.bz2"
   sha256 "0bbb8f754a31f29013f6e9ad4c755d92bb0f154a665c4b623e86ae7174d98e33"
 
+  bottle do
+    root_url "https://github.com/vtta/homebrew-i386-jos-elf-gcc/releases/download/0.0.1"
+    sha256 "a5e43d7824137ec216a2f1d35fa9269b6b82a88f63a4f182131a4a0c68a6c168" => :catalina
+  end
+
   depends_on 'gmp'
   depends_on 'libmpc'
   depends_on 'mpfr'
